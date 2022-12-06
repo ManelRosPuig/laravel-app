@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sum/{x}/{y}', [HelloworldController::class, 'sum']);
+
+Route::get('/min/{x}/{y}', [HelloworldController::class, 'min']);
+
+Route::get('/mul/{x}/{y}', [HelloworldController::class, 'mul']);
+
+Route::get('/div/{x}/{y}', [HelloworldController::class, 'div']);
